@@ -15,8 +15,8 @@
 
 .jumbotron {
     background-color: #e0e8ef;
-    padding: 0px 5px 0px 5px;
-    margin: 0px 0px 5px 0px;
+    padding: 0px 8px 0px 5px;
+    margin: 0px 0px 0px 0px;
 }
 
 
@@ -93,7 +93,7 @@
 }
 
 .mynav {
-    padding-top: 5px;
+    padding-top: 0px;
     padding-bottom: 10px;
 }
 
