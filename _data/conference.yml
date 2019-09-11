@@ -122,4 +122,33 @@ Local_organization:
 Web_chair:
   - name: Nawrin Sultana, Auburn University, USA
 technical_program_committees:
-
+  - name: Hartwig Anzt, Karlsruhe Institute of Technology
+  - name: Marc Casas, Barcelona Supercomputing Center
+  - name: Adrián Castelló, Universitat Jaume Ⅰ
+  - name: Taru Doodi, Intel Corporation
+  - name: Javier Garcia Blas, Carlos Ⅲ University
+  - name: Richard Graham, Mellanox Technologies
+  - name: Ryan E. Grant, Sandia National Laboratories
+  - name: William Gropp, University of Illinois at Urbana-Champaign
+  - name: Marc-André Hermanns, RWTH Aachen University
+  - name: Dan Holmes, The University of Edinburgh
+  - name: Sergio Iserte, Universitat Jaume Ⅰ
+  - name: Tanzima Islam, Texas State University
+  - name: Surabhi Jain, Intel Corporation
+  - name: Nikhil Jain, Nvidia
+  - name: Stefano Markidis, KTH Royal Institute of Technology
+  - name: Guillaume Mercier, ENSEIRB/INRIA
+  - name: Misbah Mubarak, Amazon Web Services
+  - name: Xiang Ni, IBM
+  - name: Bogdan Nicolae, Argonne National Laboratory
+  - name: Lena Oden, Fernuniversität Hagen
+  - name: Olga Pearce, Lawrence Livermore National Laboratory
+  - name: Ken Raffenetti, Argonne National Laboratory
+  - name: Raghunath Raja Chandrasekar, Amazon Web Services
+  - name: Kento Sato, RIKEN R-CCS
+  - name: Min Si, Argonne National Laboratory
+  - name: Jeff Squyres, Cisco
+  - name: Hari Subramoni, The Ohio State University
+  - name: Rajeev Thakur, Argonne National Laboratory
+  - name: Jesper Larsson Träff, Vienna University of Technology
+  - name: Matthias Weber, TU Dresden 
