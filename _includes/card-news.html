@@ -6,7 +6,7 @@
         <ul class="list-group list-group-flush">
             {% if site.data.conference.news %}
                 {% for news_entry in site.data.conference.news %}
-                <li class="list-group-item bg-faded text-muted">{{ news_entry.date }} <p style="text-align:justify;font-size:20px"> {{ news_entry.text }} </p></li>
+                <li class="list-group-item bg-faded text-muted"> <p style="text-align:justify"> {{ news_entry.text }} </p></li>
                 {% endfor %}
             {% else %}
                 <li class="list-group-item bg-faded text-muted">TBA</li>
