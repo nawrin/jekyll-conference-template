@@ -14,13 +14,13 @@
                                 <p><strong>{{ deadline.text }}:</strong> 
                                 {% if deadline.timezone %}
                                   {% if deadline.newdate %}
-                                  <del> {{ deadline.date | date: "%B %e, %Y" }} ({{ deadline.timezone }})</del> &nbsp; <font color="red"> {{ deadline.newdate }} ({{ deadline.timezone }}) </font>
+                                  <del> {{ deadline.date | date: "%B %e, %Y" }} ({{ deadline.timezone }})</del> &nbsp; <font color="red"> {{ deadline.newdate | date: "%B %e, %Y"}} ({{ deadline.timezone }}) </font>
                                   {% else %}
                                     {{ deadline.date | date: "%B %e, %Y" }} ({{ deadline.timezone }})
                                   {% endif %}
                                 {% else %}
                                   {% if deadline.newdate %}
-                                  <del> {{ deadline.date | date: "%B %e, %Y" }} </del> &nbsp; <font color="red"> {{ deadline.newdate }} </font>
+                                  <del> {{ deadline.date | date: "%B %e, %Y" }} </del> &nbsp; <font color="red"> {{ deadline.newdate | date: "%B %e, %Y"}} </font>
                                   {% else %}
                                     {{ deadline.date | date: "%B %e, %Y" }}
                                   {% endif %}
