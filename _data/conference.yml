@@ -85,9 +85,10 @@ navbar:
     path: /archive.html
     visible: True
 deadlines:
-  - date: 2020-5-20
+  - date: 2020-5-13
+    newdate: 2020-5-20
     timezone: AOE
-    text: Full paper Submission (extended)
+    text: Full paper Submission
     pass_due: False
   - date: 2020-7-1
     text: Notification of acceptance (Paper)
@@ -97,7 +98,7 @@ deadlines:
     text: Workshops and Tutorials Submission
     pass_due: False
 news:
-  - date: 2020-05-8
+  - date: 
     text: The organizing committee of EuroMPI/USA 2020 is currently evaluating all options to hold the conference in-person,
           virtually, or as a hybrid of the two. No decision has yet been made, however, we will be working in cooperation with
           the local organizing team and monitoring local restrictions and guidelines to determine our plans as the conference approaches.
