@@ -7,54 +7,203 @@ slide_id: 5
 
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 offset-lg-1 col-xl-10 offset-xl-1">
         <h5>PROGRAM</h5>
-        <p>TBA</p>
-        {% for day in site.data.schedule %}
-        <div>
-            <h4 class="schedule-table-heading">{{ day.dateReadable }} - Day {{ forloop.index }}</h4>
-            <table class="table table-bordered table-striped table-hover table-responsive table-sm">
-            {% for timeslot in day.timeslots %}
-                    <thead>
-                            <tr>
-                                <th class="bg-info text-center">
-                                        <div>{{timeslot.startTime}}-{{timeslot.endTime}}</div>
-                                </th>
-                                {% if timeslot.type == "service" %}
-                                    <th class="bg-warning text-center">
-                                            <p class="text-muted">{{timeslot.title}}</p>
-                                    </th>
-                                {% else %}
-                                    <th class="bg-primary text-center">
-                                            <h5>{{timeslot.title}}</h5>
-                                            {% if timeslot.speaker %}
-                                            <h5>{{timeslot.speaker}}</h5>
-                                            {% endif %}
-                                            {% if timeslot.chair %}
-                                                <h6>Session chair:{{timeslot.chair}}</h6>
-                                            {% endif %}
-                                    </th>
-                                {% endif %}
-                            </tr>
-                    </thead>
-                    {% if timeslot.events %}
-                    <tbody>
-                        {% for event in timeslot.events %}
-                            <tr>
-                                <td width="20%">
-                                </td>
-                                <td>
-                                    <p><b>{{event.title}}</b></p>
-                                    <p><i>{{event.speakers}}</i></p>
-                                </td>
-                            </tr>
-                        {% endfor %}
-                    </tbody>
-                    {% endif %}
-            {% endfor %}
-            </table>
-        </div>
-        {% endfor %}
-
-        {% include contact-us.html %}
+        <table class="program" style="border:0px;"><tbody><tr class="program_day"><td colspan="3">September 10</td>
+          </tr><tr class="program_notes"><td colspan="3">(additional registration required)</td>
+          </tr><tr class="program_entry_even"><td class="time">
+              <p>09:00 – 12:00</p>
+            </td>
+            <td class="event">
+              <div class="session_title">Tutorial</div>
+              <div class="paper_authors">Konstantinos Parasyris (Barcelona Supercomputing Center)</div>
+              <div class="paper_title">Multilevel Checkpointing for MPI Applications</div>
+            </td>
+            <td class="room">LEE C 104</td>
+          </tr><tr class="program_break"><td class="time">12:00 - 14:00</td>
+            <td class="event">Catered lunch</td>
+            <td class="room">CLA Glashalle</td>
+          </tr><tr class="program_entry"><td class="time">14:00 - 17:00</td>
+            <td class="event">
+              <div class="session_title">Tutorial</div>
+              <div class="paper_authors">Tal Ben Nun (ETH Zurich)</div>
+              <div class="paper_title">Reproducible Parallel and Distributed Deep Learning with Deep500</div>
+            </td>
+            <td class="room">LEE C 104</td>
+          </tr><tr class="program_day"><td colspan="3">September 11</td>
+          </tr><tr class="program_entry_even"><td class="time">08:45 - 09:00</td>
+            <td class="event">Opening Remarks, Torsten Hoefler and Jesper Larsson Traeff</td>
+            <td class="room">HG E 1.2</td>
+          </tr><tr class="program_entry"><td class="time">09:00 - 10:00</td>
+            <td class="event">
+              <div class="session_title">Keynote - chaired by Torsten Hoefler</div>
+              <div class="paper_authors">Brian Van Essen</div>
+              <div class="paper_title"><a alt="Scalable Deep Learning for Scientific Computing" href="../keynote1/">Scalable Deep Learning for Scientific Computing</a></div>
+            </td>
+            <td class="room">HG E 1.2</td>
+          </tr><tr class="program_break"><td class="time">10:00 - 10:30</td>
+            <td class="event">Coffee Break</td>
+            <td class="room">HG E Nord Foyer</td>
+          </tr><tr class="program_entry_even"><td class="time">10:30 - 12:00</td>
+            <td class="event">
+              <div class="session_title">Paper Session 1: Message-Passing and PGAS Interfaces: Part 1 - chaired by Bill Gropp</div>
+              <table style="border:0px; width:100%"><tbody><tr><td>
+                    <div class="paper_authors">P. V. Bangalore, R. Rabenseifner, D. Holmes, J. Jaeger, G. Mercier, C. Blaas-Schenner, A. Skjellum.</div>
+                    <div class="paper_title">Exposition, Clarification, and Expansion of MPI Semantic Terms and Conventions: Is a nonblocking MPI function permitted to block?</div>
+                  </td>
+                </tr><tr><td>
+                    <div class="paper_authors">S. Rivas-Gomez, A. Fanfarillo, S. Narasimhamurthy, S. Markidis.</div>
+                    <div class="paper_title">Persistent Coarrays: Integrating MPI Storage Windows in Coarray Fortran</div>
+                  </td>
+                </tr><tr><td>
+                    <div class="paper_authors">Gustavo Alonso</div>
+                    <div class="invited_talk"><strong>Invited talk:</strong> <a alt="Building a large scale database on top of MPI" href="../node/16/">Building a large scale database on top of MPI</a></div>
+                  </td>
+            </tr></tbody></table></td>
+            <td class="room">HG E 1.2</td>
+          </tr><tr class="program_break"><td class="time">12:00 - 13:30</td>
+            <td class="event">Catered Lunch</td>
+            <td class="room">HG E Nord Foyer</td>
+          </tr><tr class="program_entry"><td class="time">13:30 - 15:00</td>
+            <td class="event">
+              <div class="session_title">Paper Session 2: Message-Passing and PGAS Interfaces: Part 2 - chaired by Daniel Holmes</div>
+              <table style="border:0px; width:100%"><tbody><tr><td>
+                    <div class="paper_authors">B. Elis, D. Yang, M. Schulz.</div>
+                    <div class="paper_title">QMPI: A Next Generation MPI Profiling Interface for Modern HPC Platforms</div>
+                  </td>
+                </tr><tr><td>
+                    <div class="paper_authors">M. Sergent, C. T. Aitkaci, P. Lemarinier, G. Papaure.</div>
+                    <div class="paper_title">Efficient Notifications for MPI One-Sided Applications</div>
+                  </td>
+                </tr><tr><td>
+                    <div class="paper_authors">C. Niethammer, R. Rabenseifner.</div>
+                    <div class="paper_title">An MPI interface for application and hardware aware Cartesian topology optimization</div>
+                  </td>
+            </tr></tbody></table></td>
+            <td class="room">HG E 1.2</td>
+          </tr><tr class="program_break"><td class="time">15:00 - 15:30</td>
+            <td class="event">Coffee Break</td>
+            <td class="room">HG E Nord Foyer</td>
+          </tr><tr class="program_entry_even"><td class="time">15:30 - 16:15</td>
+            <td class="event">Poster Presentations</td>
+            <td class="room">HG E 1.2</td>
+          </tr><tr class="program_entry"><td class="time">16:15 - 18:00</td>
+            <td class="event">Poster Session with drinks and snacks</td>
+            <td class="room">HG E Nord Foyer</td>
+          </tr><tr class="program_day"><td colspan="3">September 12</td>
+          </tr><tr class="program_entry_even"><td class="time">09:00 - 10:00</td>
+            <td class="event">
+              <div class="session_title">Keynote - chaired by Stefano Markidis</div>
+              <div class="paper_authors">Mathieu Luisier</div>
+              <div class="paper_title"><a href="../node/14/">Massively Parallel Computer Aided Design of Nano- Transistors: When Physics Lets You Down</a></div>
+            </td>
+            <td class="room">HG E 1.2</td>
+          </tr><tr class="program_break"><td class="time">10:00 - 10:30</td>
+            <td class="event">Coffee Break</td>
+            <td class="room">HG E Nord Foyer</td>
+          </tr><tr class="program_entry"><td class="time">10:30 - 12:00</td>
+            <td class="event">
+              <div class="session_title">Paper Session 3: Applications of and for MPI - chaired by Stefano Markidis</div>
+              <table style="border:0px; width:100%"><tbody><tr><td>
+                    <div class="paper_authors">A. Castello, M. F. Dolz, E. S. Quintana-Orti, Duato.</div>
+                    <div class="paper_title">Analysis of Model Parallelism for Distributed Neural Networks</div>
+                  </td>
+                </tr><tr><td>
+                    <div class="paper_authors">K. Dichev, D. Nikolopoulos.</div>
+                    <div class="paper_title">Implementing Efficient Message Logging Protocols as MPI Application Extensions</div>
+                  </td>
+                </tr><tr><td>
+                    <div class="paper_authors">A. Y. Polyakov, B. I. Karasev, J. Hursey, J. Ladd, M. Brinskii, E. Shipunova.</div>
+                    <div class="paper_title">A Performance Analysis And Optimization Of PMIx-based HPC Software Stacks</div>
+                  </td>
+            </tr></tbody></table></td>
+            <td class="room">HG E 1.2</td>
+          </tr><tr class="program_break"><td class="time">12:00 - 13:30</td>
+            <td class="event">Catered Lunch</td>
+            <td class="room">HG E Nord Foyer</td>
+          </tr><tr class="program_entry_even"><td class="time">13:30 - 15:00</td>
+            <td class="event">
+              <div class="session_title">Paper Session 4: Performance, Implementations, Hardware: Part 1 - chaired by Martin Schulz</div>
+              <table style="border:0px; width:100%"><tbody><tr><td>
+                    <div class="paper_authors">J. Besnard, J. Jaeger, A. D. Malony, S. Shende, H. Taboada, M. Perache, P. Carribault.</div>
+                    <div class="paper_title">Mixing Ranks, Tasks, Progress and Non-Blocking Collectives</div>
+                  </td>
+                </tr><tr><td>
+                    <div class="paper_authors">N. Islam, G. Zheng, S. Sur, A. Langer, M. Garzaran.</div>
+                    <div class="paper_title">Minimizing the Usage of Hardware Counters for Collective Communication using Triggered Operations</div>
+                  </td>
+                </tr><tr><td>
+                    <div class="paper_authors">S. Levy, K. B. Ferreira.</div>
+                    <div class="paper_title">Evaluating Tradeoffs Between MPI Message Matching Offload Hardware Capacity and Performance</div>
+                  </td>
+            </tr></tbody></table></td>
+            <td class="room">HG E 1.2</td>
+          </tr><tr class="program_break"><td class="time">15:00 - 15:30</td>
+            <td class="event">Coffee Break</td>
+            <td class="room">HG E Nord Foyer</td>
+          </tr><tr class="program_entry"><td class="time">15:30 - 17:00</td>
+            <td class="event">
+              <p><strong>Panel chaired by Bill Gropp</strong><br />
+                    Experts: Maria Garzaran, Stefano Markidis, Ron Brightwell</p>
+                    <p><strong>Designing MPI in 2020</strong></p>
+                    <div class="padding:9px;">MPI was designed over 25 years ago. In that era, computers required multiple chips for each processor; the ratio of memory latency to processor clock speed was far different, as was the ratio of floating point performance to memory and interconnect bandwidth. There has also been a tremendous change in how software is designed and used, with backward compatibility no longer required in many cases, and the lifetime of much (but not all) software now measured in months or years instead of decades. What would MPI look like if it were designed today? This panel will discuss some of the trends of current parallel computer architecture and software and how they might shape the design of a parallel programming system.
+                      <p> </p>
+                    </div>
+                  </td>
+                  <td class="room">HG E 3</td>
+                </tr><tr class="program_entry_even"><td class="time">17:00 - 17:15</td>
+                  <td class="event">EuroMPI 2020</td>
+                  <td class="room">HG E 3</td>
+                </tr><tr class="program_entry"><td class="time">17:15 - 18:00</td>
+                  <td class="event">Poster Session</td>
+                  <td class="room">HG E Nord Foyer</td>
+                </tr><tr class="program_entry_even"><td class="time">18:00 - 18:15</td>
+                  <td class="event">Group photo</td>
+                  <td class="room">Polyterrace</td>
+                </tr><tr class="program_entry"><td class="time">18:15 - 22:00</td>
+                  <td class="event">
+                    <div class="session_title">Social Event</div>
+                    <p>     <img align="left" alt="" height="104" src="../sites/default/files/images/large_Zunfthaus-zur-Waag_05_0/index.jpg" style="margin:3px" width="104" /> We will take a relaxing walk from the ETH to the old town of Zurich. There, Mr. Sepp Wimmer from the <a href="https://www.zunfthaus-zur-waag.ch/en/home/?lang=set" target="_blank">Zunfthaus Zur Waag</a> greets us with an aperitif at the wine fountain or in the cloister of the Münsterhof (depending on the weather). Afterwards we will have dinner at the Zunfthaus Zur Waag with many Swiss specialties.</p></td>
+                  <td class="room">From Polyterrace to Zunfthaus Zur Waag</td>
+                </tr><tr class="program_day"><td colspan="3">September 13</td>
+                </tr><tr class="program_entry_even"><td class="time">09:00 - 10:00</td>
+                  <td class="event">
+                    <div class="session_title">Keynote - chaired by Jesper Larsson Traeff</div>
+                    <div class="paper_authors">Ron Brightwell</div>
+                    <div class="paper_title"><a alt="Opportunities and Challenges for Accelerated Network Interfaces in HPC" href="../keynote3/">Opportunities and Challenges for Accelerated Network Interfaces in HPC</a></div>
+                  </td>
+                  <td class="room">HG E 1.2</td>
+                </tr><tr class="program_break"><td class="time">10:00 - 10:30</td>
+                  <td class="event">Coffee Break</td>
+                  <td class="room">HG E Nord Foyer</td>
+                </tr><tr class="program_entry"><td class="time">10:30 - 12:00</td>
+                  <td class="event">
+                    <div class="session_title">Paper Session 5: Performance, Implementations, Hardware: Part 2 - chaired by Ron Brightwell</div>
+                    <table style="border:0px; width:100%"><tbody><tr><td>
+                          <div class="paper_authors">W. P. Marts, M. G. F. Dosanjh, W. Schonbein, R. E. Grant, P. G. Bridges.</div>
+                          <div class="paper_title">MPI Tag Matching Performance on ConnectX and ARM</div>
+                        </td>
+                      </tr><tr><td>
+                          <div class="paper_authors">D. Zhong, A. Bouteiller, X. Luo, G. Bosilca.</div>
+                          <div class="paper_title">Runtime Level Failure Detection and Propagation in HPC Systems</div>
+                        </td>
+                      </tr><tr><td>
+                          <div class="paper_authors">Martin Schulz</div>
+                          <div class="paper_title"><strong>Invited Talk:</strong> <a alt="MPI 4.0 is coming! What’s next?" href="../invited2/">MPI 4.0 is coming! What’s next?</a></div>
+                        </td>
+                  </tr></tbody></table></td>
+                  <td class="room">HG E 1.2</td>
+                </tr><tr class="program_break"><td class="time">12:00 - 13:30</td>
+                  <td class="event">Catered Lunch</td>
+                  <td class="room">HG E Nord Foyer</td>
+                </tr><tr class="program_entry_even"><td class="time">13:30 - 14:15</td>
+                  <td class="event">
+                    <div class="paper_authors">Edmund Preiss (Intel)</div>
+                    <div class="paper_title"><a alt="Software Development Tools for distributed and cross platform HPC environments" href="../intel/">Software Development Tools for distributed and cross platform HPC environments</a></div>
+                  </td>
+                  <td class="room">HG E 1.2</td>
+                </tr><tr class="program_entry" style="border-bottom:1px solid gray"><td class="time">14:15 - 14:45</td>
+                  <td class="event">Closing Remarks</td>
+                  <td class="room">HG E 1.2</td>
+              </tr></tbody></table>
     </div>
 
 </div>
