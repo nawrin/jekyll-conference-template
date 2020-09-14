@@ -5,43 +5,12 @@ description: > # this means to ignore newlines until "baseurl:"
   EuroMPI.... 
 location: Austin, TX
 date: September 21-24, 2020
-logo_path: ./assets/images/logo.pdf
+logo_path: ./assets/images/logo.png
 slideshow:
   - id: 0
-    image_path: ./assets/images/slideshow/Austin skyline.jpg
-    description: Austin skyline
-    photographer_name: Jean-Michel Defaux
-    photographer_link: 
-    active: True
-  - id: 1
-    image_path: ./assets/images/slideshow/Texas State Capitol Building.jpg
-    description: Texas State Capitol Building
-    photographer_name: Austin Convention & Visitors Bureau
-    photographer_link: 
-  - id: 2
-    image_path: ./assets/images/slideshow/Texas State Capitol Building-2.jpg
-    description: Evening at Texas State Capitol Building
-    photographer_name: Austin Convention & Visitors Bureau
-    photographer_link: 
-  - id: 3
-    image_path: ./assets/images/slideshow/Austin Skyline with kayaker  dog.jpg
-    description: Austin Skyline with kayaker & dog
-    photographer_name: Austin Convention & Visitors Bureau
-    photographer_link: 
-  - id: 4
-    image_path: ./assets/images/slideshow/Sunset over downtown Austin skyline.jpg
-    description: Downtown Austin skyline and Lady Bird Lake
-    photographer_name: Geoff Duncan
-    photographer_link: 
-  - id: 5
-    image_path: ./assets/images/slideshow/Historic Sixth Street Mural.jpg
-    description: Sixth Street Mural
-    photographer_name: Carmen M Fischer
-    photographer_link: 
-  - id: 6
-    image_path: ./assets/images/slideshow/View from Mount Bonnell.jpg
-    description: The view from the top of Mount Bonnell over Lake Austin in the daytime
-    photographer_name: Austin Convention & Visitors Bureau
+    image_path: ./assets/images/slideshow/Austin_panorama.png
+    description: Austin Panorama
+    photographer_name: TheCaliBook
     photographer_link: 
 navbar:
   - id: 0
@@ -85,25 +54,45 @@ navbar:
     path: /archive.html
     visible: True
 deadlines:
-  - date: 2020-5-13
-    newdate: 2020-5-20
+  - date: 2020-5-24
     timezone: AOE
-    text: Full paper Submission
+    text: Abstracts Submission Due
     pass_due: False
-  - date: 2020-7-1
-    text: Notification of acceptance (Paper)
+  - date: 2020-5-24
+    newdate: 2020-5-27
+    timezone: AOE
+    text: Full Paper Submission Due
+    pass_due: False
+  - date: 2020-7-10
+    text: Notification of Acceptance (Paper)
+    pass_due: False
+  - date: 2020-7-25
+    newdate: 2020-8-1
+    timezone: AOE
+    text: Poster Submission Due
+    pass_due: False
+  - date: 2020-8-15
+    text: Notification of Acceptance (Poster)
     pass_due: False
   - date: 2020-2-24
     timezone: AOE
-    text: Workshops and Tutorials Submission
+    text: Workshops and Tutorials Submission Due
     pass_due: False
+  - date: 2020-8-14
+    text: Author Registration Deadline (Main Conference Papers)
+    pass_due: False
+  - date: 2020-8-29
+    text: Author Registration Deadline (Workshops and Posters)
+    pass_due: False
+
 news:
-  - date: 
-    text: The organizing committee of EuroMPI/USA 2020 is currently evaluating all options to hold the conference in-person,
-          virtually, or as a hybrid of the two. No decision has yet been made, however, we will be working in cooperation with
-          the local organizing team and monitoring local restrictions and guidelines to determine our plans as the conference approaches.
-          Regardless of the format, the organizing team is committed to holding a high-quality conference including an excellent technical
-          program.
+  - date:
+    text: Due to the restrictions currently in place because of the COVID-19 pandemic, the organizing committee of EuroMPI/USA
+          2020 has decided to hold this year's conference entirely virtually. While there will be no in-person gathering, we
+          will still conduct a full technical program which you can discover on the conference's program website. Registration
+          for non-author attendees is free and now open (including workshop/tutorial registration) and is required for each day
+          individually. This year's conference will utilize a mixture of live and pre-recorded presentations from contributing
+          authors. We hope to be able to reach more people than ever before and look forward to your participation. 
 #  - date: 2017-05-12
 #    text: Submission site online
 #  - date: 2017-03-08
@@ -121,50 +110,57 @@ general_chair:
 program_chairs:
   - name: Kathryn Mohror, Lawrence Livermore National Laboratory, USA 
   - name: Toni Pena, Barcelona Supercomputing Center, Spain
+poster_chairs:
+  - name: Marc-André Hermanns, RWTH Aachen University, Germany
+  - name: George Bosilca, University of Tennessee, Knoxville, USA
 Tutorial_Workshop_chair:
   - name: Ryan Grant, Sandia National Laboratory, USA
 Publicity_chairs:
   - name: Atsushi Hori, RIKEN, Japan
   - name: Guillaume Mercier, INRIA, France
 Proceedings_chair: 
-  - name: Yanfei Guo, Oak Ridge National Laboratory, USA
+  - name: Yanfei Guo, Argonne National Laboratory, USA
 Finance_registration_chair:
   - name: Min Si, Argonne National Laboratory, USA
 Local_organization:
-  - name: Kent Milfeld, TACC
+  - name: Kent Milfeld, Texas Advanced Computing Center, USA
 Web_chair:
-  - name: Nawrin Sultana, Auburn University, USA
+  - name: Nawrin Sultana, Intel Corporation, USA
 technical_program_committees:
-  - name: Hartwig Anzt, Karlsruhe Institute of Technology
-  - name: Marc Casas, Barcelona Supercomputing Center
-  - name: Adrián Castelló, Universitat Jaume Ⅰ
-  - name: Taru Doodi, Intel Corporation
-  - name: Javier Garcia Blas, Carlos Ⅲ University
-  - name: Richard Graham, Mellanox Technologies
-  - name: Ryan E. Grant, Sandia National Laboratories
-  - name: William Gropp, University of Illinois at Urbana-Champaign
-  - name: Marc-André Hermanns, RWTH Aachen University
-  - name: Dan Holmes, The University of Edinburgh
-  - name: Sergio Iserte, Universitat Jaume Ⅰ
-  - name: Tanzima Islam, Texas State University
-  - name: Surabhi Jain, Intel Corporation
-  - name: Nikhil Jain, Nvidia
-  - name: Stefano Markidis, KTH Royal Institute of Technology
-  - name: Guillaume Mercier, ENSEIRB/INRIA
-  - name: Misbah Mubarak, Amazon Web Services
-  - name: Xiang Ni, IBM
-  - name: Bogdan Nicolae, Argonne National Laboratory
-  - name: Lena Oden, Fernuniversität Hagen
-  - name: Olga Pearce, Lawrence Livermore National Laboratory
-  - name: Ken Raffenetti, Argonne National Laboratory
-  - name: Raghunath Raja Chandrasekar, Amazon Web Services
-  - name: Kento Sato, RIKEN R-CCS
-  - name: Min Si, Argonne National Laboratory
-  - name: Jeff Squyres, Cisco
-  - name: Hari Subramoni, The Ohio State University
-  - name: Rajeev Thakur, Argonne National Laboratory
-  - name: Jesper Larsson Träff, Vienna University of Technology
-  - name: Matthias Weber, TU Dresden
+  - name: Hartwig Anzt, Karlsruhe Institute of Technology, Germany
+  - name: Marc Casas, Barcelona Supercomputing Center, Spain
+  - name: Adrián Castelló, Universitat Jaume Ⅰ, Spain
+  - name: Taru Doodi, Intel Corporation, USA
+  - name: Javier Garcia Blas, Carlos Ⅲ University, Spain
+  - name: Richard Graham, Mellanox Technologies, USA
+  - name: Ryan E. Grant, Sandia National Laboratories, USA
+  - name: William Gropp, University of Illinois at Urbana-Champaign, USA
+  - name: Marc-André Hermanns, RWTH Aachen University, Germany
+  - name: Dan Holmes, The University of Edinburgh, Scotland
+  - name: Sergio Iserte, Universitat Jaume Ⅰ, Spain
+  - name: Tanzima Islam, Texas State University, USA
+  - name: Surabhi Jain, Microsoft Corporation, USA
+  - name: Nikhil Jain, Nvidia, USA
+  - name: Stefano Markidis, KTH Royal Institute of Technology, Sweden
+  - name: Guillaume Mercier, ENSEIRB/INRIA, France
+  - name: Xiang Ni, IBM, USA
+  - name: Bogdan Nicolae, Argonne National Laboratory, USA
+  - name: Lena Oden, Fernuniversität Hagen, Germany
+  - name: Olga Pearce, Lawrence Livermore National Laboratory, USA
+  - name: Rolf Rabenseifner, High Performance Computing Center Stuttgart (HLRS), Germany
+  - name: Ken Raffenetti, Argonne National Laboratory, USA
+  - name: Raghunath Raja Chandrasekar, Amazon Web Services, USA
+  - name: Kento Sato, RIKEN R-CCS, Japan
+  - name: Min Si, Argonne National Laboratory, USA
+  - name: Jeff Squyres, Cisco, USA
+  - name: Hari Subramoni, The Ohio State University, USA
+  - name: Rajeev Thakur, Argonne National Laboratory, USA
+  - name: Jesper Larsson Träff, Vienna University of Technology, Austria
 poster_committees:
-  - name: Anja Gerbes, Goethe University
-  - name: Claudia Blaas-Schenner, TU Wien 
+  - name: Claudia Blaas-Schenner, TU Wien, Austria
+  - name: Anja Gerbes, Goethe Universität Frankfurt, Germany
+  - name: Julien Jaeger, CEA, France
+  - name: Emmanuel Jeannot, INRIA, France
+  - name: Radita Liem, RWTH Aachen University, Germany
+  - name: Nuria Losada, Universidade de Crouña, Spain
+  - name: Servio Rivas-Gomez, EPFL, Switzerland
