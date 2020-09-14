@@ -110,7 +110,7 @@ news:
 #    text: Website online
 sponsors:
   - name: Intel
-    logo_path: ./assets/images/sponsors/acm-logo.png
+  logo_path: ./assets/images/sponsors/intel-usage-fpo.JPG
 #  - name: IEEE
 #    logo_path: ./assets/images/sponsors/ieee-logo.gif
 #social_media:
